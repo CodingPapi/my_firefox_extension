@@ -24,7 +24,7 @@ var observerFixed = new MutationObserver(function(mutations) {
 	//     });
 	//     console.log(a,b,c,d);
 	// });
-
+	// $('#fixVersions > optgroup:nth-child(1) > option:nth-child(1)').attr("selected", true);
     selectFixed();
 
     // $('#resolution').onChange=webChange;
@@ -111,7 +111,7 @@ function selectWontFix() {
 
 function selectDuplicate() {
 	// $('#fixVersions > optgroup:nth-child(1) > option:nth-child(1)').attr('selected',true);
-	$('#customfield_10019').val("10052").change();
+	$('#customfield_10019').val("10057").change();
 	$('#customfield_10018').val("10050").change();
 	$('#customfield_10201').val("11601").change();
 	$('#customfield_12300').val("14801").change();
