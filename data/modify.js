@@ -119,7 +119,7 @@ function selectDuplicate() {
 	$('#customfield_10018').val("10050").change();
 	$('#customfield_10201').val("11601").change();
 	$('#customfield_12300').val("14801").change();
-	$('#customfield_12200').val("14520").change();
+	$('#customfield_12200').val("14521").change();
 	// $('#customfield_10017').text("No Solution");
     // $('#customfield_10019 > option:nth-child(3)').attr('selected',true);
     // $('#customfield_10018 > option:nth-child(7)').attr('selected',true);
