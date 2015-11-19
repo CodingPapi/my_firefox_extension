@@ -25,7 +25,8 @@ var observerFixed = new MutationObserver(function(mutations) {
 	//     console.log(a,b,c,d);
 	// });
 	// $('#fixVersions > optgroup:nth-child(1) > option:nth-child(1)').attr("selected", true);
-    selectFixed();
+	webChange();
+    // selectFixed();
 
     // $('#resolution').onChange=webChange;
     $('#resolution').change(webChange);
@@ -38,6 +39,7 @@ var config = { childList: true, subtree: true }
  
 // 传入目标节点和观察选项
 observerFixed.observe(target, config);
+
 
 // $('#resolution').addEventListener("change",webChange,false); 
 function webChange() {
@@ -90,6 +92,7 @@ function selectFixed() {
 	$('#customfield_10201').val("11602").change();
 	$('#customfield_12300').val("14801").change();
 	$('#customfield_12200').val("14520").change();
+	// $('#customfield_10017').text("");
     // $('#customfield_10019 > option:nth-child(3)').attr('selected',true);
     // $('#customfield_10018 > option:nth-child(2)').attr('selected',true);
     // $('#customfield_10201 > option:nth-child(4)').attr('selected',true);
@@ -103,6 +106,7 @@ function selectWontFix() {
 	$('#customfield_10201').val("11601").change();
 	$('#customfield_12300').val("14801").change();
 	$('#customfield_12200').val("14520").change();
+	// $('#customfield_10017').text("No Solution");
     // $('#customfield_10019 > option:nth-child(3)').attr('selected',true);
     // $('#customfield_10018 > option:nth-child(7)').attr('selected',true);
     // $('#customfield_10201 > option:nth-child(3)').attr('selected',true);
@@ -116,6 +120,7 @@ function selectDuplicate() {
 	$('#customfield_10201').val("11601").change();
 	$('#customfield_12300').val("14801").change();
 	$('#customfield_12200').val("14520").change();
+	// $('#customfield_10017').text("No Solution");
     // $('#customfield_10019 > option:nth-child(3)').attr('selected',true);
     // $('#customfield_10018 > option:nth-child(7)').attr('selected',true);
     // $('#customfield_10201 > option:nth-child(3)').attr('selected',true);
@@ -129,6 +134,7 @@ function selectCannotReproduce() {
 	$('#customfield_10201').val("11600").change();
 	$('#customfield_12300').val("14801").change();
 	$('#customfield_12200').val("14520").change();
+	// $('#customfield_10017').text("No Solution");
     // $('#customfield_10019 > option:nth-child(3)').attr('selected',true);
     // $('#customfield_10018 > option:nth-child(7)').attr('selected',true);
     // $('#customfield_10201 > option:nth-child(2)').attr('selected',true);
@@ -142,6 +148,7 @@ function selectNotBug() {
 	$('#customfield_10201').val("11601").change();
 	$('#customfield_12300').val("14801").change();
 	$('#customfield_12200').val("14521").change();
+	// $('#customfield_10017').text("No Solution");
     // $('#customfield_10019 > option:nth-child(8)').attr('selected',true);
     // $('#customfield_10018 > option:nth-child(7)').attr('selected',true);
     // $('#customfield_10201 > option:nth-child(3)').attr('selected',true);
@@ -155,6 +162,7 @@ function selectPending() {
 	$('#customfield_10201').val("11600").change();
 	$('#customfield_12300').val("14801").change();
 	$('#customfield_12200').val("14520").change();
+	// $('#customfield_10017').text("No Solution");
     // $('#customfield_10019 > option:nth-child(3)').attr('selected',true);
     // $('#customfield_10018 > option:nth-child(7)').attr('selected',true);
     // $('#customfield_10201 > option:nth-child(2)').attr('selected',true);
@@ -168,6 +176,7 @@ function selectDefer() {
 	$('#customfield_10201').val("11600").change();
 	$('#customfield_12300').val("14801").change();
 	$('#customfield_12200').val("14520").change();
+	// $('#customfield_10017').text("No Solution");
     // $('#customfield_10019 > option:nth-child(3)').attr('selected',true);
     // $('#customfield_10018 > option:nth-child(7)').attr('selected',true);
     // $('#customfield_10201 > option:nth-child(2)').attr('selected',true);
